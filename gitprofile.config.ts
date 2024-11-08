@@ -322,7 +322,7 @@ const CONFIG: Config = {
       '--rounded-btn': '3rem',
     },
   },
-  footer: 'Made with <a class="text-primary" href="https://showyourwork.ing" target="_blank" rel="noreferrer">ShowYourWorking</a> and ❤️',
+  footer: `Made with <a class="text-primary" href="https://showyourwork.ing" target="_blank" rel="noreferrer">ShowYourWorking</a> and ❤️`,
   enablePWA: true,
 };
 
