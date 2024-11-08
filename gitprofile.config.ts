@@ -6,10 +6,40 @@ export type SocialLinks = {
   twitter?: string;
   /** Mastodon username. Example: "arifszn@mastodon.social" */
   mastodon?: string;
+  /** ResearchGate username */
+  researchGate?: string;
   /** Personal website URL. Example: "https://www.arifszn.com" */
   website?: string;
   /** Contact email address. Example: "arifulalamszn@gmail.com" */
   email?: string;
+  /** Facebook username */
+  facebook?: string;
+  /** Instagram username */
+  instagram?: string;
+  /** Reddit username */
+  reddit?: string;
+  /** Threads username */
+  threads?: string;
+  /** YouTube channel ID */
+  youtube?: string;
+  /** Udemy username */
+  udemy?: string;
+  /** Dribbble username */
+  dribbble?: string;
+  /** Behance username */
+  behance?: string;
+  /** Medium username */
+  medium?: string;
+  /** Dev.to username */
+  dev?: string;
+  /** Stack Overflow user ID */
+  stackoverflow?: string;
+  /** Skype username */
+  skype?: string;
+  /** Telegram username */
+  telegram?: string;
+  /** Phone number */
+  phone?: string;
 };
 
 export type Project = {
@@ -89,9 +119,9 @@ export type Config = {
           projects: string[];
         };
       };
-      manual: {
+      manual?: {
         /** List of repository names to display. Example: ["arifszn/gitprofile", "arifszn/pandora"] */
-        projects: string[];
+        projects?: string[];
       };
     };
     external: {
@@ -110,9 +140,9 @@ export type Config = {
     imageURL: string;
   };
   social: SocialLinks;
-  resume: {
+  resume?: {
     /** URL for resume file. Empty will hide the Download Resume button. Example: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" */
-    fileUrl: string;
+    fileUrl?: string;
   };
   /** List of skills. Example: ["PHP", "Laravel", "JavaScript", "React.js", ...] */
   skills: string[];
@@ -132,13 +162,13 @@ export type Config = {
   educations: Education[];
   /** List of publications. */
   publications: Publication[];
-  blog: {
+  blog?: {
     /** Source for blog articles (medium | dev). Example: "dev" */
-    source: 'medium' | 'dev';
+    source?: 'medium' | 'dev';
     /** Username for blog source. To hide blog section, keep it empty. Example: "arifszn" */
-    username: string;
+    username?: string;
     /** How many articles to display. Max is 10. Example: 2 */
-    limit: number;
+    limit?: number;
   };
   googleAnalytics: {
     /** GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX. Example: "" */
